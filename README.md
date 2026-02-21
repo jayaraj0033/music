@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        nav {
+            background-color: #333;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #667eea;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        
+        .content-section {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .content-section h2 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+        
+        .content-section p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+        
+        .music-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+        
+        .music-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .music-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+        }
+        
+        .music-card h3 {
+            margin-bottom: 0.5rem;
+        }
+        
+        .music-card p {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🎵 My Music</h1>
+        <p>Discover Amazing Music</p>
+    </header>
+    
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#songs">Songs</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <div class="container">
+        <!-- Home Section -->
+        <section id="home" class="content-section">
+            <h2>Welcome</h2>
+            <p>Welcome to my music collection! Here you'll find a curated selection of my favorite songs, artists, and musical experiences.</p>
+            <p>Music has the power to inspire, energize, and move us. Explore the collection and discover new favorites!</p>
+        </section>
+        
+        <!-- About Section -->
+        <section id="about" class="content-section">
+            <h2>About This Site</h2>
+            <p>This is a personal music content site showcasing my passion for music. Whether you're into pop, rock, jazz, classical, or any other genre, there's something here for everyone.</p>
+            <p>I regularly update this collection with new discoveries and recommendations.</p>
+        </section>
+        
+        <!-- Songs Section -->
+        <section id="songs" class="content-section">
+            <h2>Featured Songs</h2>
+            <div class="music-grid">
+                <div class="music-card">
+                    <h3>🎸 Rock Anthem</h3>
+                    <p>An energetic rock song that will get you moving</p>
+                </div>
+                <div class="music-card">
+                    <h3>🎹 Jazz Vibes</h3>
+                    <p>Smooth and relaxing jazz for those chill moments</p>
+                </div>
+                <div class="music-card">
+                    <h3>🎤 Pop Hit</h3>
+                    <p>Catchy pop melody that's perfect for any mood</p>
+                </div>
+                <div class="music-card">
+                    <h3>🎺 Soul Music</h3>
+                    <p>Heartfelt soul music with deep emotions</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="content-section">
+            <h2>Get In Touch</h2>
+            <p>Have music recommendations or want to collaborate? Feel free to reach out!</p>
+            <p>Email: pichu.to.pikachu.007@gmail.com</p>
+            <p>Follow me on social media for updates!</p>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2026 My Music Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
